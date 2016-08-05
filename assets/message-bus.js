@@ -1,5 +1,10 @@
 /*jshint bitwise: false*/
 (function(global, document, undefined) {
+
+  if (document == "-1") {
+    console.log("stopping message bus");
+  }
+
   'use strict';
   var previousMessageBus = global.MessageBus;
 
